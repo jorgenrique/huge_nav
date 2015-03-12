@@ -1,0 +1,245 @@
+@import "fonts.css";
+
+*{
+  padding:0;
+  margin:0;
+}
+
+body {
+  width:100%;
+  overflow-x:hidden;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-family:HUGEAvantGardeBold;
+  font-size:120px;
+  text-align: center;
+  width:80%;
+}
+
+header{
+  background: #ec008c;
+  color: #fff;
+  width:100%;
+  float:left;
+  position:relative;
+  z-index:4;
+}
+header #logo{
+  width:60px;
+  height:24px;
+  padding:24px;
+  background:url(../images/HUGE-white-logo.png) center center no-repeat;
+  float:left;
+}
+header .icon{
+  display:none;
+}
+header #close_menu{
+  display:none;
+}
+header #navigation_bar{
+  display:block;
+}
+header #navigation_bar .submenu_cont{
+  float:left;
+  position:relative;
+}
+header #navigation_bar .submenu_cont .list_cont{
+  display:none;
+  position:absolute;
+  background-color:#fff;
+  top:72px;
+  left:0;
+  width:220px;
+}
+header #navigation_bar .submenu_cont .list_cont a{
+  width:auto;
+  text-decoration:none;
+  font-size:16px;
+  font-family:Galaxie;
+  padding:15px 20px;
+  width:180px;
+  background-color:#fff;
+  color:#000;
+  float:left;
+}
+header #navigation_bar .submenu_cont .list_cont a:hover{
+  background-color:#eee;
+  color:#ec008c;
+}
+header #navigation_bar ul{
+  list-style-type:none;
+}
+header #navigation_bar ul li{
+  float:left;
+  height:20px;
+  padding:26px 12px;
+  font-size:19px;
+  font-family:HUGEAvantGardeBold;
+  cursor:pointer;
+}
+header #navigation_bar ul li a{
+  color:inherit;
+  text-decoration:none;
+  margin-top:2px;
+}
+#holder{
+  width:100%;
+  height:640px;
+  color:#fff;
+  position:relative;
+  float:left;
+}
+#holder #background{
+  width:100%;
+  height:100%;
+  background-image:url(../images/background-image.jpg);
+  background-size:cover;
+}
+
+footer{
+  width:100%;
+  margin:60px 0 30px;
+  background-color:#fff;
+  color:#000;
+  font-family:Galaxie;
+  font-size:24px;
+  line-height:1.2;
+  float:left;
+}
+footer #footer_txt{
+  width:968px;
+  margin:auto;
+}
+#bg_overlay{
+  width:100%;
+  height:100%;
+  position:fixed;
+  z-index:2;
+  background-color:rgba(0, 0, 0, 0.5);
+  display:none;
+}
+#side_nav{
+  display:none;
+}
+@media all and (max-width: 990px) and (min-width: 768px){
+  footer #footer_txt{
+    width:760px;
+  }
+}
+@media all and (max-width: 767px){
+  header{
+    padding:0;
+    position:fixed;
+    top:0;
+  }
+  header #navigation_bar{
+    display:none !important;
+  }
+  header #logo{
+    height:20px;
+    padding:20px 24px;
+  }
+  header .icon{
+    top:20px;
+    right:24px;
+    width:20px;
+    display:block;
+    position:absolute;
+  }
+  header nav{
+    display:none;
+  }
+  #holder{
+    height:auto;
+  }
+  #holder #background{
+    height:240px;
+    background-repeat:no-repeat;
+    float:left;
+  }
+  #holder h1{
+    float:left;
+    position:static;
+    color:#000;
+    text-align:left;
+    -webkit-transform:none;
+    transform:none;
+    font-size:44px;
+    margin:50px 24px;
+    width:auto;
+  }
+  footer{
+    margin:0;
+  }
+  footer #footer_txt{
+    width:auto;
+    font-size:14px;
+    margin:0 24px;
+    float:left;
+  }
+  #side_nav{
+    width:300px;
+    position:fixed;
+    z-index:3;
+    height:100%;
+    background-color:white;
+    left:0;
+    overflow-y:auto;
+  }
+  #side_nav #menu_cont{
+    margin-top:70px;
+  }
+  #side_nav #menu_cont ul{
+    list-style-type:none;
+  }
+  #side_nav #menu_cont .submenu_cont{
+    float:left;
+    width:252px;
+    margin:10px 24px;
+    position:relative;
+  }
+  #side_nav #menu_cont .submenu_cont .arrow{
+    position:absolute;
+    right:0;
+    top:0;
+  }
+  #side_nav #menu_cont .submenu_cont .down_arrow{display:block;}
+  #side_nav #menu_cont .submenu_cont .up_arrow{display:none;}
+  #side_nav #menu_cont .submenu_cont:last-child{
+    margin-bottom: 60px;
+  }
+  #side_nav #menu_cont .submenu_cont .list_cont_mob{
+    display:none;
+  }
+  #side_nav #menu_cont .submenu_cont .list_cont_mob a{
+    font-family:Galaxie;
+    font-size:16px;
+    float:left;
+    width:100%;
+    padding:10px 0;
+    text-decoration:none;
+    color:#000;
+  }
+  #side_nav #menu_cont li a{
+    color:#000;
+    font-family:HUGEAvantGardeBold;
+    font-size:18px;
+    text-decoration:none;
+  }
+  #side_nav #copyright{
+    position:fixed;
+    bottom:0;
+    font-family:Helvetica;
+    font-size:12px;
+    padding:10px 24px;
+    background-color:#fff;
+  }
+}
